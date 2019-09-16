@@ -1,0 +1,32 @@
+body{
+
+    display:flex;
+    justify-content: center;
+
+
+}
+
+label{
+    background-color: rgb(0, 238, 255);
+    border: 5px solid rgb(0, 238, 255);
+}
+
+td{
+    padding: 50px;
+    border: 0.5px #000 solid;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 15.5px;
+    
+    
+
+}
+
+p{
+    transform: translate(250%, 125%)
+}
+button{
+
+    align-items: center;
+
+}
