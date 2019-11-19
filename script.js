@@ -25,7 +25,7 @@ for (let indice = 0; indice < li.length; indice++) {
             li[indice].innerHTML = player
             player = `X`
             label.innerText = `X`
-            label.style.color = `blue`
+            label.style.color = `#00ffdd`
             li[indice].style.pointerEvents = `none`
 
         }
@@ -40,7 +40,7 @@ function inicio() {
 
     player = "X"
     label.innerText = "X"
-    label.style.color = `blue`
+    label.style.color = `#00ffdd`
     label.style.fontSize = `20px`
 
 
