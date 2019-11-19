@@ -17,16 +17,12 @@ ul{
 }
 ul li{
     font-size: 50px;
-    padding: 30px 50px;
     border: 3px solid;
-}
-
-td{
-    padding: 50px;
-    border: 0.5px #000 solid;
-    cursor: pointer;
-    font-family: arial;
-    font-size: 15.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 100px;
 }
 
 p{
@@ -57,4 +53,10 @@ div.reset button{
     background: cornsilk;
     border-color: cornsilk;
     font-family: arial;
+    cursor: pointer;
+}
+div.reset button:active {
+    color: white;
+    background: #000;
+    cursor: progress;
 }
