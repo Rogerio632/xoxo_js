@@ -31,9 +31,6 @@ ul li{
     height: 100px;
 }
 
-p{
-    transform: translate(250%, 125%)
-}
 button{
 
     align-items: center;
@@ -53,7 +50,7 @@ div.content .reset{
     margin-top: 20px;
 }
 div.reset button{
-    box-shadow: 1px 3px 10px rgb(0, 0, .1);
+    box-shadow: 1px 3px 5px rgb(0, 0, .1);
     height: 40px;
     width: 100px;
     background: cornsilk;
