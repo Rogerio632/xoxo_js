@@ -1,4 +1,4 @@
-let td = document.getElementsByTagName(`td`)
+let li = document.getElementsByTagName(`li`)
 let player
 
 let label = document.getElementById(`label`)
@@ -7,26 +7,26 @@ button.addEventListener(`click`, reset)
 
 inicio()
 
-for (let indice = 0; indice < td.length; indice++) {
+for (let indice = 0; indice < li.length; indice++) {
 
-    td[indice].addEventListener(`click`, () => {
+    li[indice].addEventListener(`click`, () => {
 
         if (player == `X`) {
 
-            td[indice].innerHTML = player
+            li[indice].innerHTML = player
             player = `O`
             label.innerText = `O`
             label.style.color = `red`
-            td[indice].style.pointerEvents = `none`
+            li[indice].style.pointerEvents = `none`
             
 
         } else if (player == `O`) {
 
-            td[indice].innerHTML = player
+            li[indice].innerHTML = player
             player = `X`
             label.innerText = `X`
             label.style.color = `blue`
-            td[indice].style.pointerEvents = `none`
+            li[indice].style.pointerEvents = `none`
 
         }
 
@@ -48,10 +48,10 @@ function inicio() {
 
 function reset() {
 
-    for (let x = 0; x < td.length; x++) {
+    for (let x = 0; x < li.length; x++) {
 
-        td[x].innerHTML = ``
-        td[x].style.pointerEvents = `all`
+        li[x].innerHTML = ``
+        li[x].style.pointerEvents = `all`
 
     }
 
@@ -62,14 +62,14 @@ function reset() {
 function winner() {
 
 
-    if ((td[0].innerText == td[1].innerText) && (td[1].innerText == td[2].innerText)) {
-        td[0].style.backgroundColor = `#0F0`
-        td[1].style.backgroundColor = `#0F0`
-        td[2].style.backgroundColor = `#0F0`
+    if ((li[0].innerText == li[1].innerText) && (li[1].innerText == li[2].innerText)) {
+        li[0].style.backgroundColor = `#0F0`
+        li[1].style.backgroundColor = `#0F0`
+        li[2].style.backgroundColor = `#0F0`
         
-        return td[0].innerText
+        return li[0].innerText
     }
-    else if ((td[1].innerText == td[4].innerText) && (td[4].innerText == td[7].innerText)) {
+    else if ((li[1].innerText == li[4].innerText) && (li[4].innerText == li[7].innerText)) {
         window.alert(`Parabéns! O jogador ${player} venceu!`)
     }
 }
